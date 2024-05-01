@@ -5,7 +5,7 @@ This application offers a streamlined interface for users to manage their tasks 
 
 ### Desktop View
 
-![Desktop View](![image](https://github.com/rakesh4902/todos-task-claimzippy-assignment-/assets/83058036/c4f0f6ff-369f-43a8-80ce-86ffe1ba95c3)
+![Desktop View](![image](https://github.com/rakesh4902/todos-task-claimzippy-assignment-/assets/83058036/c4f0f6ff-369f-43a8-80ce-86ffe1ba95c3))
 )
 
 
