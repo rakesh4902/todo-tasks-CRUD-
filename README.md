@@ -5,7 +5,7 @@ This application offers a streamlined interface for users to manage their tasks 
 
 ### Desktop View
 
-![Desktop View]![image](https://github.com/rakesh4902/todos-task-claimzippy-assignment-/assets/83058036/13d167d9-0359-4047-848a-bab80ca70d62)
+![Desktop View](![image](https://github.com/rakesh4902/todos-task-claimzippy-assignment-/assets/83058036/13d167d9-0359-4047-848a-bab80ca70d62))
 
 
 ### Mobile View
@@ -21,7 +21,7 @@ This application offers a streamlined interface for users to manage their tasks 
 - Both the title and description fields must not be empty.
 - This validation ensures that only valid task data is accepted and stored, enhancing the reliability of the application.
 
-- ![Validation-1 view][image](https://github.com/rakesh4902/todos-task-claimzippy-assignment-/assets/83058036/13d167d9-0359-4047-848a-bab80ca70d62) ,![Validation-2 view]![image](https://github.com/rakesh4902/todo-tasks-CRUD-/assets/83058036/43a0664b-b912-4918-a059-d21f41ef2059)
+- ![Validation-1 view](![image](https://github.com/rakesh4902/todos-task-claimzippy-assignment-/assets/83058036/13d167d9-0359-4047-848a-bab80ca70d62)) ,![Validation-2 view]![image](https://github.com/rakesh4902/todo-tasks-CRUD-/assets/83058036/43a0664b-b912-4918-a059-d21f41ef2059)
 
 
 
