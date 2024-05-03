@@ -19,7 +19,7 @@ class TaskForm extends Component {
   fetchTasks = async () => {
     try {
       // Fetch tasks from the backend API
-      const response = await fetch('http://localhost:3000/tasks');
+      const response = await fetch('https://todo-tasks-crud.onrender.com/tasks');
       if (!response.ok) {
         throw new Error('Failed to fetch tasks');
       }
@@ -47,7 +47,7 @@ class TaskForm extends Component {
       // Update existing task
       try {
         // Sending PUT request to update task
-        const response = await fetch(`http://localhost:3000/tasks/${selectedTaskId}`, {
+        const response = await fetch(`https://todo-tasks-crud.onrender.com/tasks/${selectedTaskId}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -83,7 +83,7 @@ class TaskForm extends Component {
     } else {
       // Create new task
       try {
-        const response = await fetch('http://localhost:3000/tasks', {
+        const response = await fetch('https://todo-tasks-crud.onrender.com/tasks', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -138,7 +138,7 @@ class TaskForm extends Component {
   handleDelete = async (taskId) => {
     // Delete the task with the given ID
     try {
-      const response = await fetch(`http://localhost:3000/tasks/${taskId}`, {
+      const response = await fetch(`https://todo-tasks-crud.onrender.com/tasks/${taskId}`, {
         method: 'DELETE',
       });
 
@@ -160,26 +160,7 @@ class TaskForm extends Component {
     }
   };
 
-  // Generate a random image URL for task background
-   imageUrls = [
-    'https://shorturl.at/buLO2',
-    'https://shorturl.at/jkmuY',
-  'https://shorturl.at/qvEL9',
-    'https://shorturl.at/amntW',
-    'https://shorturl.at/muKVZ',
-    'https://shorturl.at/opCQ7',
-    'https://rb.gy/emofwj',
-    'https://shorturl.at/uwRSU',
-    'https://shorturl.at/uERSU',
-    'https://shorturl.at/rJO19',
-    'https://shorturl.at/brsI8',
 
-  ];
-
-  getRandomImageUrl = () => {
-    const randomIndex = Math.floor(Math.random() * this.imageUrls.length);
-    return `url('${this.imageUrls[randomIndex]}')`;
-  };
 
 
   // Render the TaskForm component
