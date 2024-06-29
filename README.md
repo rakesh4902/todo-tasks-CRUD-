@@ -1,43 +1,60 @@
-# Task Management Application Overview
+## Overview
 
-This application offers a streamlined interface for users to manage their tasks efficiently. Users can create, update, and delete tasks seamlessly within the user-friendly environment. The frontend, powered by React, presents a task form enabling users to input task details such as title and description, while tasks are displayed dynamically in a list format.
+The Brewery Review Application is a web-based platform that allows users to search for breweries, view detailed information about them, and leave reviews. The application provides an intuitive interface for users to find breweries by name, city, or type, and offers a robust review system where users can rate and comment on their experiences.
 
-### Want to see the website? then click https://todo-tasks-crud.vercel.app/
+## Key Features
 
+1. **User Authentication**:
+   - Users can sign up and log in to the application securely.
+   - Authentication is handled using JSON Web Tokens (JWT), ensuring user data privacy and security.
 
-### Desktop View
+2. **Search Functionality**:
+   - Users can search for breweries using various criteria: by name, by city, or by type.
+   - The search results display relevant breweries matching the user’s query.
 
-![Desktop View](https://github.com/rakesh4902/todo-tasks-CRUD-/assets/83058036/a31fcb8b-b11a-445a-8ef9-312845dcd7e9)
+3. **Brewery Information**:
+   - Detailed information about each brewery is displayed, including name, location, contact information, and website.
+   - Users can see a list of reviews left by other users for each brewery.
 
+4. **Review System**:
+   - Logged-in users can leave reviews for breweries they have visited.
+   - Reviews include a star rating (1 to 5 stars) and a text description of their experience.
+   - Users can update or delete their reviews if needed.
 
+5. **Protected Routes**:
+   - Certain routes and actions are protected and require user authentication to access.
+   - This ensures that only authenticated users can leave, update, or delete reviews.
 
-### Mobile View
+## Technical Details
 
-![Mobile View](https://github.com/rakesh4902/todos-task-claimzippy-assignment-/assets/83058036/769edca7-64ba-4f1c-ba01-3abd50fa748c)
+### Frontend
+- **Framework**: React
+  - Functional components and hooks for state management.
+  - React Router for client-side routing.
+  - CSS for styling components.
 
+### Backend
+- **Framework**: Node.js with Express.js
+  - RESTful API endpoints for client interactions.
+- **Database**: SQLite
+  - Stores user data, reviews, and other necessary information.
+- **Authentication**: JSON Web Tokens (JWT)
+  - Middleware to protect certain routes.
 
+## User Experience
 
-### Data Validation
+### Home/Search Page
+- Users are greeted with a search interface where they can select the search type and enter their query.
+- The search results page displays breweries that match the user’s search criteria.
 
-- The backend, built with Express and Sequelize, includes a validation process for incoming task data.
-- Users must enter a title with a minimum of 2 characters.
-- Both the title and description fields must not be empty.
-- This validation ensures that only valid task data is accepted and stored, enhancing the reliability of the application.
+### Brewery Info Page
+- Displays detailed information about the selected brewery.
+- Users can read reviews left by other users and see average ratings.
+- Logged-in users can leave a review or update/delete their existing review.
 
-- ![Validation-1 view](https://github.com/rakesh4902/todos-task-claimzippy-assignment-/assets/83058036/13d167d9-0359-4047-848a-bab80ca70d62) ![Validation-2 view](https://github.com/rakesh4902/todo-tasks-CRUD-/assets/83058036/43a0664b-b912-4918-a059-d21f41ef2059)
-
-
-
-### View Backend Data(Where the data has been storing)
-![image](https://github.com/rakesh4902/todos-task-claimzippy-assignment-/assets/83058036/75da1055-f674-4236-aac2-a9425831cd8c)
-
-
-
-
-
-This workflow enables users to perform actions on tasks with ease, enhancing productivity and organization in their workflow.
-
-
+### User Dashboard
+- Users can see a personalized welcome message.
+- Users can log out from their account securely.
 
 
 ## How to Start This Application on Your Local PC
